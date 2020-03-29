@@ -28,7 +28,12 @@ window.onload = function() {
         box.style.border = '0.1px solid black';
         box.style.backgroundColor = 'white';
         box.addEventListener('click',function(){
-            box.style.backgroundColor = colorPainter;
+            if (box.style.backgroundColor != 'white' && box.style.backgroundColor == colorPainter) {
+                box.style.backgroundColor = 'white';
+            } else {
+                box.style.backgroundColor = colorPainter;
+            };
+            
         })
         /*box.addEventListener('mouseover',function(){
             box.style.backgroundColor = 'purple';
