@@ -1,0 +1,33 @@
+body {
+    background-color: whitesmoke;
+}
+
+#instructions {
+    font-family:sans-serif;
+    margin:auto;
+    text-align:center;
+}
+
+#palette {
+    display: grid;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    height: 20px;
+    width: 120px;
+    margin: auto;
+    grid-template-columns: repeat(6, 20px);
+    grid-template-rows: repeat(1, 20px);
+}
+
+#canvas {
+    display: grid;
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    position: relative;
+}
